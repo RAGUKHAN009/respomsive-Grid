@@ -1,0 +1,456 @@
+/* 
+    GENERAL CONFIGURATION
+*/
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: system-ui;
+}
+
+
+
+
+
+
+/* 
+    HERO CONTAINER
+*/
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./hero.png);
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+    HEADER SECTION
+*/
+
+header {
+    width: 100%;
+    height: 8%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    width: 30%;
+    font-size: 1.6rem;
+}
+
+.heading a {
+    text-decoration: none;
+    color: white;
+}
+
+.orange-dot {
+    color: #ff5466;
+    font-size: 2.5rem;
+}
+
+.navs {
+    width: 65%;
+    font-size: 1.4rem;
+}
+
+.navs ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.home {
+    text-decoration: underline #ff5466;
+}
+
+.search-button {
+    width: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* 
+    MAIN-CONT
+*/
+
+main {
+    width: 60%;
+    height: 92%;
+}
+
+main h1 {
+    color: #ffdba3;
+    height: 30%;
+    font-size: 6rem;
+    padding-top: 10%;
+}
+
+.heading-span {
+    color: #ffa19d;
+}
+
+main p {
+    width: 60%;
+    height: 20%;
+    font-size: 1.5rem;
+    color: #fff8ec;
+}
+
+.butt-ancor button {
+    width: 15%;
+    border-radius: 100px;
+    border: 3px solid #b25057;
+    background-color: transparent;
+    color: white;
+    height: 5vh;
+    font-size: 1.4rem;
+    outline: none;
+}
+
+.butt-ancor a {
+    margin-left: 3%;
+    font-size: 1.4rem;
+    color: white;
+    font-style: italic;
+}
+
+.left- {
+    position: absolute;
+    top: 320px;
+    color: white;
+    left: 120px;
+    font-size: 3rem;
+    height: 7%;
+    width: 3.7%;
+    border-radius: 100px;
+    background-color: red;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.left- i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.right- {
+    position: absolute;
+    top: 320px;
+    right: 120px;
+    color: white;
+    font-size: 3rem;
+    height: 7%;
+    width: 3.7%;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.right- i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* 
+    BODY-2 STARTS EHRE
+*/
+
+.grid-cont {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 
+    GRID-CONT-HEADING
+*/
+
+.heading-grid {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.heading-grid ul {
+    list-style: none;
+    font-size: 1.4rem;
+    width: 40%;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.all {
+    border-bottom: 3px solid #b25057;
+}
+
+/* 
+    GRID-LAYOUT
+*/
+
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 100px 200px 250px 250px;
+    gap: 20px;
+    width: 60%;
+
+}
+
+.grid-layout img {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.img-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.img-2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+.img-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.img-4 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: -1;
+}
+
+.img-5 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+.img-6 {
+    grid-row: 3/5;
+    grid-column: 2/3;
+}
+
+.img-7 {
+    grid-row: 2/4;
+    grid-column: 3/4;
+
+}
+
+.img-8 {
+    grid-row: 3/4;
+    grid-column: 4/-1;
+}
+
+.img-9 {
+    grid-row: 4/-1;
+    grid-column: 1/2;
+}
+
+.img-10 {
+    grid-column: 2/3;
+    grid-row: 5/-1;
+}
+
+.img-11 {
+    background-color: yellow;
+    grid-column: 3/-1;
+    grid-row: 4/-1;
+}
+
+.grid-layout img {
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+
+/* 
+    GRID-FOOTER
+*/
+
+.footer-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-grid button {
+    background: transparent;
+    border: 3px solid #b25057;
+    width: 10%;
+    height: 5vh;
+    margin-top: 3%;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #b25057;
+}
+
+.footer-grid button:hover {
+    background: #b25057;
+    border: 3px solid white;
+    color: white;
+}
+
+/* 
+    LAST-BODY-CONT
+*/
+
+.last-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.last-body h1 {
+    font-size: 2.4rem;
+}
+
+.last-body p {
+    font-size: 1.5rem;
+}
+
+.last-body p a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 
+    LAST-CONT-GALLERY
+*/
+
+.last-gallery {
+    margin-top: 3%;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+
+}
+
+.last-gallery::-webkit-scrollbar {
+    height: 1vh;
+
+}
+
+.last-gallery::-webkit-scrollbar-thumb {
+    background-color: transparent;
+
+}
+
+.pic {
+    width: 500px;
+    height: 100%;
+    background-color: yellow;
+
+}
+
+/* 
+    FOOTER
+*/
+
+footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.copy p {
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.left-border {
+    border-left: 2px solid rgb(101, 101, 101);
+    padding-left: 1%;
+}
+
+.color-lab a {
+    color: #ff5466;
+    text-decoration: none;
+}
+
+.color-lab a:hover {
+    text-decoration: underline;
+}
+
+.company {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+}
+
+.company p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 70%;
+}
+
+.company p a {
+    color: black;
+    text-decoration: none;
+}
+
+.logos {
+    width: 30%;
+
+}
+
+.logos ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    font-size: 1.9rem;
+}
+
+.logos ul a {
+    color: black;
+}
+
+.logos ul a:hover {
+    color: #ff5466;
+}
